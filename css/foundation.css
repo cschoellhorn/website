@@ -1,13 +1,47 @@
-  .header {
+
+/*------------------------------------
+ centered nav bar styles
+------------------------------------*/
+@media only screen and (min-width: 40em) {
+  .top-bar {
+    text-align: center; }
+
+  ul.center-buttons {
+    display: inline-block; }
+
+  .logo {
+    left: 5px;
+    top: -2px;
+    position: absolute; } }
+.logo {
+  max-width: 2rem;
+  margin-top: -3px;
+  margin-left: 5px; }
+
+.menu-icon {
+  padding-top: 1.2rem; }
+
+.top-bar.expanded {
+  background: #333333; }
+
+.logo {
+  margin-top: .5rem; }
+
+
+/*------------------------------------
+ subnav styles
+------------------------------------*/
+
+.header {
   background: url("https://static.pexels.com/photos/6894/summer-photographer-pier-adventure-large.jpg") no-repeat center center;
   background-size: cover;
-  height: 10rem; }
+  height: 3rem; }
   .header h1, .header h4 {
     color: #666; }
 
 .subnav {
-  left:70%;
-  position: fixed;
+  float: none;
+  position: relative;
   top: 2.2rem;
   text-align: center;
   margin-bottom: 0; }
@@ -33,6 +67,10 @@
         color: #333;
         transition: all .25s ease-in-out; }
 
+/*------------------------------------
+parallax styles
+------------------------------------*/
+
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
   font-weight: 200;
@@ -40,16 +78,20 @@ body {
 }
 
 .parallax-background {
-  background: url("https://github.com/cschoellhorn/website/blob/master/img/face.jpg?raw=true");
   height: 620px;
-  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: fixed;
   width: 100%;
+    background: url("https://github.com/cschoellhorn/website/blob/master/img/face.jpg?raw=true");
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax-background-2 {
+
 }
 
 .intro-text {
@@ -73,77 +115,93 @@ body {
 .row {
   max-width: 1200px; }
 
+/*------------------------------------
+footer styles
+------------------------------------*/
+
 .footer {
   background-color: #292c2f;
   text-align: center;
   font-size: 1.2rem;
   padding: 4rem; }
-  .footer .inline-list a {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background-color: #33383b;
-    border-radius: 2px;
-    font-size: 1.5rem;
-    color: #fff;
-    text-align: center;
-    line-height: 35px;
-    margin: 0 3px 0 0; }
-  .footer .contact {
-    list-style-type: none;
-    margin: 0;
+
+.footer .inline-list a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 3px 0 0; }
+
+.footer .contact {
+  list-style-type: none;
+  margin: 0;
+  text-align: left;
+  color: #fff; }
+    
+.footer .contact li {
+  margin-bottom: 2rem; }
+  
+.footer .contact li p {
+    padding-left: 5rem; }
+  
+.footer .contact i {
+  position: absolute;
+  background-color: #33383b;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin: 0 0 0 -4rem;
+  vertical-align: middle;
+  padding: .25em .45em; }
+
+.footer .copywrite {
+  color: #8f9296;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0; }
+
+.footer .about {
+  color: #92999f;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0; }
+
+.footer .footer-links a {
+  list-style: none;
+  font-weight: normal;
+  color: #fff;
+  padding: 3rem 0 2rem;
+  margin: 0;
+  font-size: 0.875rem; }
+  
+.footer .footer-links a::after {
+  content: "•";
+  padding: 0 0.2rem 0 0.4rem; }
+  
+.footer .footer-links a:last-child::after {
+  content: "";
+  padding: 0 0.4rem 0 0.8rem; }
+
+@media only screen and (min-width: 40.063em) {
+  .footer p {
+    text-align: left; }
+  .footer .social {
     text-align: left;
-    color: #fff; }
-    .footer .contact li {
-      margin-bottom: 2rem; }
-      .footer .contact li p {
-        padding-left: 5rem; }
-    .footer .contact i {
-      position: absolute;
-      background-color: #33383b;
-      color: #fff;
-      font-size: 2rem;
-      border-radius: 50%;
-      line-height: 1;
-      margin: 0 0 0 -4rem;
-      vertical-align: middle;
-      padding: .25em .45em; }
-  .footer .copywrite {
-    color: #8f9296;
-    font-size: 0.875rem;
-    margin: 0 0 1rem 0; }
-  .footer .about {
-    color: #92999f;
-    font-size: 0.875rem;
-    margin: 0 0 1rem 0; }
-  .footer .footer-links a {
-    list-style: none;
-    font-weight: normal;
-    color: #fff;
-    padding: 3rem 0 2rem;
-    margin: 0;
-    font-size: 0.875rem; }
-    .footer .footer-links a::after {
-      content: "•";
-      padding: 0 0.2rem 0 0.4rem; }
-    .footer .footer-links a:last-child::after {
-      content: "";
-      padding: 0 0.4rem 0 0.8rem; }
-  @media only screen and (min-width: 40.063em) {
-    .footer p {
-      text-align: left; }
-    .footer .social {
-      text-align: left;
-      margin: 0; }
-    .footer .contact {
-      text-align: left; }
-      .footer .contact > i {
-        margin-right: 1rem; } }
+    margin: 0; }
+  .footer .contact {
+    text-align: left; }
+    .footer .contact > i {
+      margin-right: 1rem; } }
 
 .logo {
   color: #fff;
   font-size: 1.5rem; }
-  .logo i {
+
+.logo i {
     margin-right: 0.5rem; }
 
 /*------------------------------------

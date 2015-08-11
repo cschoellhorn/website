@@ -12,24 +12,46 @@
     <script>
       var selectedId = "<%= @selected_file %>";
     </script>
+  </head>
   <body>
-    </head>
-    <header>
-    <div> <h1> test content </h1> </div>
     <div class="parallax-background">
-      <div class="row">
-        <div class="medium-8 columns">
-          <h1><a href="/" id="root-link">Christine Schoeellhorn</h1>
-          <h4>The quest for innovation and immaculate reality</h4>
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  <div class="logo">
+    <a href="http://zurb.com/stickers/images/intro-foundation.png"><img src="http://zurb.com/stickers/images/intro-foundation.png" /></a>
+  </div>
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="center-buttons">
+      <li class="divider"></li>
+      <li><a href="#">Centered Button</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Centered Button</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Centered Button</a></li>
+      <li class="divider"></li>
+    </ul>
+  </section>
+</nav>
+    <header>  
+    <div class="row">
+          <div class="medium-8 columns">
+            <h1><a href="/" id="root-link">Christine Schoeellhorn</h1>
+            <h4>The quest for innovation and immaculate reality</h4>
+          </div>
         </div>
-      </div>
-      <ul class="subnav hide-for-small-only">
-        <li><a href="/resume" id="resume-link">Resume</a></li>
-        <li><a href="/" id="root-link">Home</a></li>
-        <li><a target="/projects" href="http://zurb.com/responsive" id="projects-link">Projects</a></li>
-      </ul>
-      <div class="intro-text">
-        <p><i class="fi-arrow-down"></i></p>
-      </div>
+        <ul class="subnav hide-for-small-only">
+          <li><a href="/resume" id="resume-link">Resume</a></li>
+          <li><a href="/" id="root-link">Home</a></li>
+          <li><a target="/projects" href="http://zurb.com/responsive" id="projects-link">Projects</a></li>
+        </ul>
+    <div class="parallax-background-2">
+        <div class="intro-text">
+          <p><i class="fi-arrow-down"></i></p>
+        </div>
+      </div>  
     </div>
     </header>
