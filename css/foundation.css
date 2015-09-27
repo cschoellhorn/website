@@ -5,16 +5,48 @@
 }
 
 .name a {
-  color: #E20000;
+  color: #D20000;
+  font-size: 2em;
 }
 
 .slogan {
 }
 
+/*------------------------------------
+other center style
+------------------------------------*/
+
+.header {
+padding: 1rem; }
+  .header .main-header {
+    color: #666;}
+
+.header-subnav {
+  float: none;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0; }
+  .header-subnav li {
+    float: none;
+    display: inline-block;
+  background: #000000;}
+    .header-subnav li a {
+      padding: 0.9rem 1rem 0.75rem;
+      font-size: 2rem;
+      color: #fff;
+      text-transform: uppercase;
+      display: block;
+      letter-spacing: 1px; }
+      .header-subnav li a.is-active {
+        color: #666; }
+      .header-subnav li a:hover {
+        color: #333;
+        transition: all .25s ease-in-out; }
+
 
 /*------------------------------------
  centered nav bar styles
-------------------------------------*/
+
 @media only screen and (min-width: 40em) {
   .top-bar {
     text-align: center; }
@@ -43,7 +75,7 @@
 
 /*------------------------------------
  subnav styles
-------------------------------------*/
+
 
 .header {
   background: url("https://static.pexels.com/photos/6894/summer-photographer-pier-adventure-large.jpg") no-repeat center center;
@@ -80,6 +112,8 @@
         color: #333;
         transition: all .25s ease-in-out; }
 
+------------------------------------*/
+
 /*------------------------------------
 parallax styles
 ------------------------------------*/
@@ -97,7 +131,7 @@ body {
   -o-background-size: cover;
   position: fixed;
   width: 100%;
-    background: url("https://github.com/cschoellhorn/website/blob/master/img/face.jpg?raw=true");
+    background: url("https://github.com/cschoellhorn/website/blob/master/img/target.jpg?raw=true");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2166,7 +2200,7 @@ meta.foundation-mq-topbar {
       /* color: #FFFFFF; */ 
       display: block;
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      font-size: 0.8125rem;
+      /*font-size: 0.8125rem;*/
       font-weight: normal;
       padding-left: 0.9375rem;
       padding: 12px 0 12px 0.9375rem;
