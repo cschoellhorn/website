@@ -29,8 +29,10 @@ padding: 1rem; }
   .header-subnav li {
     float: none;
     display: inline-block;
-  background: #000000;}
+  background: #EFEEEC;}
+
     .header-subnav li a {
+      font-weight bold;
       padding: 0.9rem 1rem 0.75rem;
       font-size: 2rem;
       color: #fff;
