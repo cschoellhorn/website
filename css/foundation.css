@@ -1,3 +1,16 @@
+/*------------------------------------
+ custom css
+------------------------------------*/
+.name {
+}
+
+.name a {
+  color: #E20000;
+}
+
+.slogan {
+}
+
 
 /*------------------------------------
  centered nav bar styles
@@ -82,7 +95,6 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
   position: fixed;
   width: 100%;
     background: url("https://github.com/cschoellhorn/website/blob/master/img/face.jpg?raw=true");
@@ -2151,7 +2163,7 @@ meta.foundation-mq-topbar {
   .top-bar-section ul li {
     background: #333333; }
     .top-bar-section ul li > a {
-      color: #FFFFFF;
+      /* color: #FFFFFF; */ 
       display: block;
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
@@ -4011,7 +4023,8 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #FFFFFF;
+  /* color: #008CBA; */
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
