@@ -41,7 +41,7 @@ padding: 1rem; }
       .header-subnav li a.is-active {
         color: #fff; }
       .header-subnav li a:hover {
-        color: #333;
+        color: #CCCCCC;
         transition: all .25s ease-in-out; }
 
 
