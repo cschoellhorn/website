@@ -28,19 +28,18 @@ padding: 1rem; }
   margin-bottom: 0; }
   .header-subnav li {
     float: none;
-    display: inline-block;
-  background: #EFEEEC;}
+    display: inline-block;}
 
     .header-subnav li a {
       font-weight bold;
       padding: 0.9rem 1rem 0.75rem;
       font-size: 2rem;
-      color: #fff;
+      color: #666;
       text-transform: uppercase;
       display: block;
       letter-spacing: 1px; }
       .header-subnav li a.is-active {
-        color: #666; }
+        color: #fff; }
       .header-subnav li a:hover {
         color: #333;
         transition: all .25s ease-in-out; }
@@ -133,7 +132,7 @@ body {
   -o-background-size: cover;
   position: fixed;
   width: 100%;
-    background: url("https://github.com/cschoellhorn/website/blob/master/img/target2.jpg?raw=true");
+    background: url("/img/sailboat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
